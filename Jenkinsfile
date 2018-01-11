@@ -1,7 +1,4 @@
 node{
-    stage('checkout'){
-        git 'https://github.com/sd1620597/maven.git'
-    }
     def mvnHome = tool 'M3'
     env.PATH = "${mvnHome}/bin:${env.PATH}"
     stage('mvn test'){
