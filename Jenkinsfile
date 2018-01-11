@@ -1,6 +1,7 @@
 node{
     stage('checkout'){
-        git([url: 'https://github.com/sd1620597/maven.git', branch: 'dev'])
+        //git([url: 'https://github.com/sd1620597/maven.git', branch: 'dev'])
+        checkout scm
     }
     stage('mvn test'){
         //mvn 测试
