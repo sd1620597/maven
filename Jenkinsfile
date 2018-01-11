@@ -1,6 +1,6 @@
 node{
     stage('checkout'){
-        git([url: 'https://github.com/GallonFan/maven.git', branch: 'dev'])
+        git([url: 'https://github.com/sd1620597/maven.git', branch: 'dev'])
     }
     stage('mvn test'){
         //mvn 测试
