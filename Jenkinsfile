@@ -16,6 +16,6 @@ node{
         echo "deploy ......" 
     }
     stage('Archive'){
-    archive 'release/**'   
+    archive 'target/*.jar'   
     }
 }
