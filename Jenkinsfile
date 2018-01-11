@@ -1,6 +1,4 @@
 node{
-    def mvnHome = tool 'M3'
-    env.PATH = "${mvnHome}/bin:${env.PATH}"
     stage('mvn test'){
         //mvn 测试
         sh "mvn test"
