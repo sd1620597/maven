@@ -15,4 +15,7 @@ node{
         //执行部署脚本
         echo "deploy ......" 
     }
+    stage('Archive'){
+    archive 'release/**'   
+    }
 }
